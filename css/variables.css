@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+:root {
+  --body-bg-color: whitesmoke;
+  --header-bg-color: linear-gradient(rgb(46, 0, 253), rgb(1, 103, 255));
+  --font1 : 'Poppins', "Sans serif";
+  --light-black : rgba(0,0,0,0.8);
+}

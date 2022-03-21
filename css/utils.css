@@ -1,0 +1,20 @@
+.link-button {
+  border: 2px solid var(--body-bg-color);
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+}
+
+.flex-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.read-more{
+    color: royalblue;
+    font-weight: 900;
+}
+
+.read-more:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
