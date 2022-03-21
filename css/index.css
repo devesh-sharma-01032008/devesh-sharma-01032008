@@ -1,0 +1,154 @@
+/* 
+Applicable css for whole elements begin here
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+main{
+    margin: 3rem 6rem;
+
+}
+h1 {
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+p {
+    font-size: 1.3rem;
+    word-spacing: 6px;
+    line-height: 1.8;
+    color: var(--light-black);
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* 
+Applicable css for whole elements end here
+*/
+
+/* 
+Applicable css for whole classes begin here
+*/
+
+.main-header {
+  height: 6rem;
+  background: var(--header-bg-color);
+}
+
+.nav-bar {
+    height: 100%;
+}
+
+.nav-bar-links-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    color: white;
+    font-size: 1.35rem;
+    padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem;
+}
+
+
+.left-part {
+  height: 100%;
+  flex-basis: 75%;
+  padding: 1.5rem;
+}
+
+.main-heading{
+    margin-bottom: 1rem;
+}
+
+.right-part {
+  flex-basis: 25%;
+  height: 100%;
+}
+
+.project-manuals{
+    margin: 10rem 0rem;
+}
+
+.heading{
+    margin-bottom: 2rem;
+}
+
+.manual{
+    padding: .5rem 1rem;
+    margin: 2rem 1rem;
+}
+
+.project-name{
+    margin-bottom: 1rem;
+}
+
+.skill-card{
+    width: 25%;
+    margin: 1rem 2rem;
+}
+.icon{
+    height: 70%;
+    display: block;
+    margin: auto;
+}
+
+.icon-name{
+    text-align: center;
+    margin: 2rem 0rem;
+    font-size: 3rem;
+}
+
+/* 
+Applicable css for whole classes end here
+*/
+
+/* 
+Applicable css for ids end here
+*/
+#my-photo{
+    border-radius: 50%;
+    height: 100%;
+    box-shadow: 0px 0px 10px blue;
+}
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#skills h1{
+    margin: 5rem 0rem 5rem 0rem;
+    flex-basis: 100%;
+}
+/* 
+Applicable css for ids end here
+*/
+
+
+/* 
+Pseudo selectors
+*/
+
+.nav-bar-links-box li a:nth-child(5){
+    margin: 0px 20px;
+}
