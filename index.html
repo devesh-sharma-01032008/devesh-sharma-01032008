@@ -11,42 +11,16 @@
     <title>Hello! Introducing to Devesh</title>
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/utils.css" />
   </head>
   <body>
-    <header class="main-header">
-      <nav class="nav-bar">
-        <ul class="nav-bar-links-box">
-          <li>
-            <a class="nav-links" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-links" href="https://github.com/devesh01032008"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a class="nav-links" href="mailto:deveshsharma1009@gmail.com"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a class="nav-links" href="#skills">Skills</a>
-          </li>
-          <li>
-            <a
-              class="nav-links link-button"
-              href="https://github.com/devesh01032008"
-              >Github</a
-            >
-          </li>
-          <li>
-            <a class="nav-links link-button" href="#project-manuals"
-              >Program Manuals</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <header class="main-header flex-2">
+      <div class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </header>
     <main>
       <section class="introduction-container flex-2">
@@ -70,9 +44,20 @@
       </section>
       <article class="skills-container" id="skills">
       </article>
+      <article class="certifates" id="certificates">
+        <h1>Certificates</h1>
+        <p>I have learnt through several online sources which provide us several certifates after taking test and making several projects these are listed below:</p>
+        <div class="certificate-container flex-2">
+
+          <iframe src="images/certificates/html_certificate.pdf" style="overflow: hidden;" scrolling="no"></iframe>
+          <iframe src="images/certificates/python_certificate.pdf" style="overflow: hidden;" scrolling="no"></iframe>
+        </div>
+      </article>
       <article class="project-manuals" id="project-manuals"></article>
     </main>
-    <footer></footer>
+    <footer class="footer flex-2">
+      &copy; COPYRIGHT devesh-sharma  2021-22
+    </footer>
     <script src="js/index.js"></script>
   </body>
 </html>
