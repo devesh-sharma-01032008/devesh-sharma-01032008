@@ -73,89 +73,74 @@ const skills = {
 // DOM variables
 const manualContainer = document.querySelector("#project-manuals");
 const skillsContainer = document.querySelector("#skills");
-const menu = document.querySelector(".menu");
-const navLinksBox = document.querySelector(".nav-bar-links-box")
-
-const toggleMenu = () => {
-    navLinksBox.classList.toggle("show-menu");
-    if(navLinksBox.style.left == '0%'){
-        navLinksBox.style.left = "-100%"
-    }else{
-        navLinksBox.style.left = "0%"
-    }
-}
 
 const addManuals = () => {
-    manualContainer.innerHTML = `<h1 class="heading">Projects On Github</h1>`;
-    for (const key in manualsInformation) {
-        manualContainer.innerHTML += `
-        <div class="manual">
-            <h2 class="project-name">
-                ${manualsInformation[key].title}
-            </h2>
-            <p class="project-description">
-                  ${manualsInformation[key].information}
-            </p>
-        </div>
-        `;
-    }
+  manualContainer.innerHTML = `<h1 class="heading">Projects On Github</h1>`;
+  for (const key in manualsInformation) {
+    manualContainer.innerHTML += `
+    <div class="manual">
+    <h2 class="project-name">
+    ${manualsInformation[key].title}
+    </h2>
+    <p class="project-description">
+    ${manualsInformation[key].information}
+    </p>
+    </div>
+    `;
+  }
 }
 
 function addSkills(){
-    skillsContainer.innerHTML = `<h1>Skills and languages</h1>`;
-    for (const key in skills) {
-        skillsContainer.innerHTML += `
-        <div class="skill-card">
-            <img src="images/logos/${skills[key].path}" class="icon" />
-            <h2 class="icon-name">${skills[key].name}</h2>
-          </div>
-        `
-    }
+  skillsContainer.innerHTML = `<h1>Skills and languages</h1>`;
+  for (const key in skills) {
+    skillsContainer.innerHTML += `
+    <div class="skill-card">
+    <img src="images/logos/${skills[key].path}" class="icon" />
+    <h2 class="icon-name">${skills[key].name}</h2>
+    </div>
+    `
+  }
 }
 
 function addNavBar(){
-    let header = document.querySelector("header");
-    header.innerHTML += `
-    <nav class="nav-bar ">
-        <ul class="nav-bar-links-box">
-          <li>
-            <a class="nav-links" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-links" target="_blank" href="mailto:${email_address}"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a class="nav-links" href="#skills">Skills</a>
-          </li>
-          <li>
-            <a class="nav-links" href="#certificates">Certifications</a>
-          </li>
-          <li>
-          <a class="nav-links" href="#project-manuals"
-            >Projects</a
-          >
-        </li>
-          <li>
-            <a
-            target="_blank"
-              class="nav-links link-button"
-              href="https://github.com/${github_username}"
-              >Github</a
-            >
-          </li>
-          <li>
-            <a class="nav-links link-button" href="#project-manuals"
-              >Program Manuals</a
-            >
-          </li>
-        </ul>
-      </nav>
-    `;
+  let header = document.querySelector("header");
+  header.innerHTML += `
+  <nav class="nav-bar ">
+  <ul class="nav-bar-links-box">
+  <li>
+  <a class="nav-links" href="#">Home</a>
+  </li>
+  <li>
+  <a class="nav-links" target="_blank" href="mailto:${email_address}"
+  >Contact</a
+  >
+  </li>
+  <li>
+  <a class="nav-links" href="#skills">Skills</a>
+  </li>
+  <li>
+  <a class="nav-links" href="#project-manuals"
+  >Projects</a
+  >
+  </li>
+  <li>
+  <a
+  target="_blank"
+  class="nav-links link-button"
+  href="https://github.com/${github_username}"
+  >Github</a
+  >
+  </li>
+  <li>
+  <a class="nav-links link-button" href="#project-manuals"
+  >Program Manuals</a
+  >
+  </li>
+  </ul>
+  </nav>
+  `;
 }
 
 addNavBar();
 addSkills();
 addManuals();
-menu.addEventListener("click",toggleMenu);
