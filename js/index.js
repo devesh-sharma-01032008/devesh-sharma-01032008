@@ -13,9 +13,13 @@ const manualsInformation = {
   },
   3: {
     title: "3. Motivational Quotes",
-    information: `This project contains a simple dynamic website which gets infinite quotes from a third party api. This was just a simple project that I made accidently.
+    information: `This project contains a simple dynamic website which gets infinite quotes from a third party api. This was just a simple project that I made accidently. You may add your styles and suggestion at <a class="read-more" href="https://github.com/devesh-sharma-01032008/Motivational-Quotes">Github</a>
         `,
   },
+  4 : {
+    title : "4. iBlog: Heaven for Bloggers",
+    information:`This project is a single page application which uses nextjs framework and it is for the bloggers to share their knowledge and geeks who want to know very much.I would myself add blogs to it and allow everyody to upload a new blog with their credits. Although it has some features pending but would be completed very soon. You may also contribute your knowledge to it at <a class="read-more" href="https://github.com/devesh-sharma0=-01032008/iBlog">Github</a>`
+  }
 };
 
 const skills = {
@@ -143,3 +147,13 @@ function addNavBar() {
 addNavBar();
 addSkills();
 addManuals();
+
+function toggleMenu(){
+  const nav_bar = document.querySelector(".nav-bar-links-box")
+  if(nav_bar.style.left == "0%"){
+    nav_bar.style.left = "-100%"
+  }else{
+
+    nav_bar.style.left = "0%"
+  }
+}

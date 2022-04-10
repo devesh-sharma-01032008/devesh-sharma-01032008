@@ -4,6 +4,7 @@ Applicable css for whole elements begin here
 
 * {
   margin: 0;
+  scroll-behavior: smooth;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font1);
