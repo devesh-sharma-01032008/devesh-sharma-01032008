@@ -52,7 +52,7 @@ const skills = {
     path: "java.jpg",
   },
   8: {
-    name: "React",
+    name: "ReactJS",
     path: "react.png",
   },
   9: {
@@ -71,6 +71,30 @@ const skills = {
     name: "Flask",
     path: "flask.png",
   },
+  13:{
+    name:"NextJS",
+    path:"nextjs.png"
+  },
+  14:{
+    name:"TypeScript",
+    path:"typescript.png"
+  },
+  15:{
+    name:"Mongo DB",
+    path:"mongodb.png"
+  },
+  16:{
+    name:"Windows",
+    path:"windows.png"
+  },
+  17:{
+    name:"Ubuntu",
+    path:"ubuntu.png"
+  },
+  18:{
+    name:"SQL",
+    path:"sql.png"
+  }
 };
 
 // DOM variables
@@ -143,10 +167,47 @@ function addNavBar() {
   </nav>
   `;
 }
+function addFooter() {
+  let footer = document.querySelector("footer");
+  footer.innerHTML += `
+  <div class="useful-urls">
+  <p>Some Useful Links:</p>
+  <ul class="footer-links-box">
+    <li>
+      <a class="footer-links" target="_blank" href="mailto:${email_address}"
+        >Contact</a
+      >
+    </li>
+    <li>
+      <a class="footer-links" href="#skills">Skills</a>
+    </li>
+    <li>
+      <a class="footer-links" href="#project-manuals">Projects</a>
+    </li>
+    <li>
+      <a
+        target="_blank"
+        class="footer-links"
+        href="https://github.com/${github_username}"
+        >Github</a
+      >
+    </li>
+    <li>
+      <a class="footer-links" href="#project-manuals"
+        >Program Manuals</a
+      >
+    </li>
+  </ul>
+</div>
+<div class="copy-right">&copy; Copyright Devesh 2022-23</div>
+  `;
+}
+
 
 addNavBar();
 addSkills();
 addManuals();
+addFooter();
 
 function toggleMenu(){
   const nav_bar = document.querySelector(".nav-bar-links-box")

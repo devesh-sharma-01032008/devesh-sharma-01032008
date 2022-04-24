@@ -18,6 +18,9 @@ html {
 main {
   margin: 3rem 6rem;
 }
+section, article{
+  min-height: 100vh;
+}
 h1 {
   font-size: 3.5rem;
 }
@@ -42,7 +45,16 @@ li {
 b{
     cursor: pointer;
 }
-
+footer{
+  padding: 2rem 5rem;
+  background: var(--header-bg-color);
+  color: white;
+  text-align: center;
+  
+}
+footer p{
+  color: white;
+}
 /* 
 Applicable css for whole elements end here
 */
@@ -66,7 +78,7 @@ Applicable css for whole classes begin here
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
+  
 }
 
 .nav-links {
@@ -135,6 +147,34 @@ Applicable css for whole classes begin here
   gap: 2rem;
 }
 
+.footer-links-box{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0rem;
+  text-align: left;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+ul.footer-links-box li{
+  list-style: circle;
+}
+
+.footer-links{
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin: 0.6rem 0.5rem;
+}
+
+.copy-right{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 /* 
 Applicable css for whole classes end here
 */
@@ -146,6 +186,8 @@ Applicable css for ids end here
   width: 70%;
   display: block;
   margin: auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px black;
 }
 #skills {
   display: flex;

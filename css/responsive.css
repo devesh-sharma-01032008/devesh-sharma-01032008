@@ -49,4 +49,7 @@
         width: 100vw;
         height: 100vh;
     }
+    a:hover{
+        font-weight: bolder;
+    }
 }
