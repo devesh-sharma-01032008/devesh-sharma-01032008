@@ -16,10 +16,10 @@ const manualsInformation = {
     information: `This project contains a simple dynamic website which gets infinite quotes from a third party api. This was just a simple project that I made accidently. You may add your styles and suggestion at <a class="read-more" href="https://github.com/devesh-sharma-01032008/Motivational-Quotes">Github</a>
         `,
   },
-  4 : {
-    title : "4. iBlog: Heaven for Bloggers",
-    information:`This project is a single page application which uses nextjs framework and it is for the bloggers to share their knowledge and geeks who want to know very much.I would myself add blogs to it and allow everyody to upload a new blog with their credits. Although it has some features pending but would be completed very soon. You may also contribute your knowledge to it at <a class="read-more" href="https://github.com/devesh-sharma0=-01032008/iBlog">Github</a>`
-  }
+  4: {
+    title: "4. iBlog: Heaven for Bloggers",
+    information: `This project is a single page application which uses nextjs framework and it is for the bloggers to share their knowledge and geeks who want to know very much.I would myself add blogs to it and allow everyody to upload a new blog with their credits. Although it has some features pending but would be completed very soon. You may also contribute your knowledge to it at <a class="read-more" href="https://github.com/devesh-sharma0=-01032008/iBlog">Github</a>`,
+  },
 };
 
 const skills = {
@@ -71,35 +71,95 @@ const skills = {
     name: "Flask",
     path: "flask.png",
   },
+  13: {
+    name: "NextJS",
+    path: "nextjs.png",
+  },
+  14: {
+    name: "TypeScript",
+    path: "typescript.png",
+  },
+  15: {
+    name: "Mongo DB",
+    path: "mongodb.png",
+  },
+  16: {
+    name: "Windows",
+    path: "windows.png",
+  },
+  17: {
+    name: "Ubuntu",
+    path: "ubuntu.png",
+  },
+  18: {
+    name: "SQL",
+    path: "sql.png",
+  },
+};
+
+const certificate = {
+  1: {
+    name: "C",
+    path: "C_certificate.jpg",
+  },
+  2: {
+    name: "C++",
+    path: "CPlusPlus_certificate.jpg",
+  },
+  3: {
+    name: "CSS",
+    path: "CSS_certificate.jpg",
+  },
+  4:{
+    name:"HTML",
+    path:"HTML_certificate.jpg"
+  },
+  5:{
+    name:"Java",
+    path:"Java_certificate.jpg"
+  },
+  6:{
+    name:"JavaScript",
+    path:"JavaScript_certificate.jpg"
+  },
+  7:{
+    name:"jQuery",
+    path:"jQuery_certificate.jpg"
+  },
+  8:{
+    name:"React",
+    path:"react_certificate.jpg"
+  },
+  9:{
+    name:"Responsive Web Design",
+    path:"Responsive-Web-Design_certificate.jpg"
+  },
+  10:{
+    name:"Python for Beginners",
+    path:"Python-for-Beginners_certificate.jpg"
+  },
+  11:{
+    name:"Intermediate Python",
+    path:"Intermediate_Python_certificate.jpg"
+  },
+  12:{
+    name:"Sql",
+    path:"Sql_certificate.jpg"
+  },
   13:{
-    name:"NextJS",
-    path:"nextjs.png"
+    name:"PHP",
+    path:"PHP_certificate.jpg"
   },
   14:{
-    name:"TypeScript",
-    path:"typescript.png"
-  },
-  15:{
-    name:"Mongo DB",
-    path:"mongodb.png"
-  },
-  16:{
-    name:"Windows",
-    path:"windows.png"
-  },
-  17:{
-    name:"Ubuntu",
-    path:"ubuntu.png"
-  },
-  18:{
-    name:"SQL",
-    path:"sql.png"
+    name:"Game Development",
+    path:"GameDev-with-JavaScript_certificate.jpg"
   }
 };
 
 // DOM variables
 const manualContainer = document.querySelector("#project-manuals");
 const skillsContainer = document.querySelector("#skills");
+const certificateContainer = document.querySelector("#certificates");
 
 const addManuals = () => {
   manualContainer.innerHTML = `<h1 class="heading">Projects On Github</h1>`;
@@ -129,6 +189,18 @@ function addSkills() {
   }
 }
 
+function addCertificates() {
+  certificateContainer.innerHTML = `<h1>Certificates</h1>`;
+  for (const key in certificate) {
+    certificateContainer.innerHTML += `
+    <div class="certificate-card">
+    <img src="images/certificates/${certificate[key].path}" class="certificate" alt="${certificate[key].path}" />
+    <h2 class="certificate-name">${certificate[key].name}</h2>
+    </div>
+    `;
+  }
+}
+
 function addNavBar() {
   let header = document.querySelector("header");
   header.innerHTML += `
@@ -146,8 +218,8 @@ function addNavBar() {
   <a class="nav-links" href="#skills">Skills</a>
   </li>
   <li>
-  <a class="nav-links" href="#project-manuals"
-  >Projects</a
+  <a class="nav-links" href="#certificates"
+  >Certificates</a
   >
   </li>
   <li>
@@ -182,7 +254,7 @@ function addFooter() {
       <a class="footer-links" href="#skills">Skills</a>
     </li>
     <li>
-      <a class="footer-links" href="#project-manuals">Projects</a>
+      <a class="footer-links" href="#certificates">Certificates</a>
     </li>
     <li>
       <a
@@ -203,18 +275,17 @@ function addFooter() {
   `;
 }
 
-
 addNavBar();
 addSkills();
+addCertificates();
 addManuals();
 addFooter();
 
-function toggleMenu(){
-  const nav_bar = document.querySelector(".nav-bar-links-box")
-  if(nav_bar.style.left == "0%"){
-    nav_bar.style.left = "-100%"
-  }else{
-
-    nav_bar.style.left = "0%"
+function toggleMenu() {
+  const nav_bar = document.querySelector(".nav-bar-links-box");
+  if (nav_bar.style.left == "0%") {
+    nav_bar.style.left = "-100%";
+  } else {
+    nav_bar.style.left = "0%";
   }
 }

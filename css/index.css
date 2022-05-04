@@ -15,6 +15,7 @@ html {
   scroll-behavior: smooth;
   font-size: 10px;
 }
+
 main {
   margin: 3rem 6rem;
 }
@@ -143,8 +144,32 @@ Applicable css for whole classes begin here
 }
 
 .certificate-container{
-  padding: 2rem;
-  gap: 2rem;
+  gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate-container h1{
+  flex: 0 0 100%;
+}
+
+.certificate-card{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.certificate{
+  width: 80%;
+}
+.certificate-name{
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 1);
+  margin: 1rem 0rem;
 }
 
 .footer-links-box{
@@ -197,6 +222,10 @@ Applicable css for ids end here
 #skills h1 {
   margin: 5rem 0rem 5rem 0rem;
   flex-basis: 100%;
+}
+
+#certificates{
+  margin-top: 10rem;
 }
 /* 
 Applicable css for ids end here
