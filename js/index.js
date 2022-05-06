@@ -95,6 +95,10 @@ const skills = {
     name: "SQL",
     path: "sql.png",
   },
+  19:{
+    name:"PHP",
+    path:'php.png'
+  }
 };
 
 const certificate = {
